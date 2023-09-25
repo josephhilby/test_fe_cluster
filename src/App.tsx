@@ -1,22 +1,23 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import AppLogo from './components/AppLogo/AppLogo';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
+        <AppLogo />
+        <div className='title-text square-gradient'>
+          Cluster Compute
+        </div>
         <a
-          className="App-link"
-          href="https://reactjs.org"
+          className="App-link gradient"
+          href="https://k3s.io/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+         &lt;K3S /&gt;
         </a>
       </header>
     </div>
